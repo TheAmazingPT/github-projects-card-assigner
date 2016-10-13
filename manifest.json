@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "manifest_version": 2,
+  "name": "Github Projects Assign",
+  "description": "Have the ability to assign yourself to an issue directly on the Github Projects Page",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/projects/2"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
